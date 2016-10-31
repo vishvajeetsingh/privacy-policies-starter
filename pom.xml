@@ -8,6 +8,10 @@
     <artifactId>privacy-policies-starter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <properties>
+        <mavencompiler.version>3.5.1</mavencompiler.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.anonos.bigprivacy</groupId>
@@ -15,6 +19,21 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Pentaho requires Java 7 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${mavencompiler.version}</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <repositories>
         <repository>

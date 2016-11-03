@@ -15,7 +15,6 @@ import java.util.Set;
  */
 public class StarterPolicy implements PrivacyPolicy {
 
-
     public String getId() {
         // TODO Return a unique ID.  You may want to use a V4 UUID, which may
         // TODO be generated here: <https://www.uuidgenerator.net/>
